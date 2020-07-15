@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-navbar toggleable="lg" fixed="top" type="dark" variant="info">
+      <b-navbar-brand href="#">E-commerce Shop Demo with IntaSend Payment</b-navbar-brand>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <router-link tag="b-nav-item" to="/">Shop</router-link>|
+          <router-link tag="b-nav-item" to="/cart">Cart</router-link>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+    <!-- Router view -->
+    <router-view />
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 </style>
