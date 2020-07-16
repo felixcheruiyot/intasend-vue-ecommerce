@@ -8,6 +8,13 @@ export default new Vuex.Store({
     cart: []
   },
   getters: {
+    total(state) {
+      let total = 0
+      state.cart.map(item => {
+        total += item.price
+      })
+      return total
+    },
     cartItems(state) {
       return state.cart
     },
