@@ -94,7 +94,7 @@ export default {
       }
       let intaSend = IntaSend.setup({
         publicAPIKey: "TPPublicKey_91ffc81a-8ac4-419e-8008-7091caa8d73f",
-        redirectURL: "/",
+        redirectURL: "/#/thank-you/",
         live: false
       });
 
