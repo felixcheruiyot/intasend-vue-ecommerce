@@ -11,9 +11,15 @@
 import Products from "@/components/Products.vue";
 
 export default {
-  name: "Home",
+  name: "Shop",
   components: {
     Products
   }
 };
 </script>
+
+<style scoped>
+.shop {
+  margin-top: 89px;
+}
+</style>
