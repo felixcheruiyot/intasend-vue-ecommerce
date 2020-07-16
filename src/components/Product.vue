@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     addToCart() {
-      alert("added");
+      this.$store.commit("addToCart", this.product);
     }
   }
 };
