@@ -61,7 +61,8 @@
 
 
 <script>
-import IntaSend from "intasend-inlinejs-sdk/src/index";
+//import IntaSend from "intasend-inlinejs-sdk/src/index";
+const IntaSend = require("intasend-inlinejs-sdk")
 
 export default {
   name: "Checkout",
@@ -92,15 +93,12 @@ export default {
       if (!this.form.name) {
         return alert("Name is required");
       }
-      let intaSend = IntaSend.setup({
-        publicAPIKey: "TPPublicKey_91ffc81a-8ac4-419e-8008-7091caa8d73f",
-        redirectURL: "https://intasend-ecommerce-demo.netlify.app/#/thank-you/",
-        live: false
-      });
-
-      this.form.amount = this.$store.getters.total;
-      this.form.api_ref = "Store 7 Orders";
-      intaSend.run(this.form);
+      const intaSendInstance = new IntaSend({
+          publicAPIKey: "TPPublicKey_91ffc81a-8ac4-419e-8008-7091caa8d73f",
+          live: false,
+          redirectURL: "https://intasend-ecommerce-demo.netlify.app/#/thank-you/"
+      })
+      intaSendInstance.run({amount: this.$store.getters.total, currency: "KES", api_ref: "Store 7 Orders"})
     }
   }
 };
