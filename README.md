@@ -1,5 +1,7 @@
 # intasend-vue-ecommerce
 
+[Live demo](https://intasend-ecommerce-demo.netlify.app/)
+
 ## Project setup
 ```
 npm install
