@@ -94,7 +94,7 @@ export default {
         return alert("Name is required");
       }
       const intaSendInstance = new IntaSend({
-          publicAPIKey: "TPPublicKey_91ffc81a-8ac4-419e-8008-7091caa8d73f",
+          publicAPIKey: "ISPubKey_test_91ffc81a-8ac4-419e-8008-7091caa8d73f",
           live: false,
           redirectURL: "https://intasend-ecommerce-demo.netlify.app/#/thank-you/"
       })
