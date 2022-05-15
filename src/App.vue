@@ -28,7 +28,7 @@
     <div class="container">
       <div class="my-4">
         This site demonstrates how
-        <a href="https://intasend.com" target="_blank">IntaSend Payments</a> site integration works. You can get access to this code at
+        <a href="https://intasend.com" target="_blank">IntaSend Payments</a> site integration works. You can get access to this code in
         <a
           href="https://github.com/felixcheruiyot/intasend-vue-ecommerce"
           target="_blank"
